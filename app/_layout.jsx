@@ -10,6 +10,7 @@ return (
   <SafeAreaProvider>
    <Stack screenOptions={{headerShown:false}}> 
     <Stack.Screen name="index" />
+    <Stack.Screen name="Prediction" />
     {/* <Stack.Screen name="todos/{id}" /> */}
     </Stack>;
   

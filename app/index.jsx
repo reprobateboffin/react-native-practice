@@ -1,24 +1,10 @@
-import { Text, View } from "react-native";
-import {WrapperContext,WrapperProvider} from '../context/Wrapper';
-import { useContext } from "react";
+import React from 'react'
+import Prediction from './Prediction'
 
-
-export default function Index() {
-
-
-const  {val1,val2} = useContext(WrapperContext);
-
+const index = () => {
   return (
-
-     <WrapperProvider>
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text style={{color:'red', backgroundColor:'blue'}}>Helo world {val1} and {val2}</Text>
-    </View></WrapperProvider>
-  );
+<Prediction />
+  )
 }
+
+export default index
